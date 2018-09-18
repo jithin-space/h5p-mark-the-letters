@@ -110,7 +110,7 @@ li {
 	padding-left: 0.75em;
 }
 
-.h5p-missed {
+[aria-describedby="h5p-description-missed"] {
 	background-color: #E4F4EC;
 	color: black;
 	border: 1px dotted grey;
