@@ -2,12 +2,7 @@
   "title": "Mark the Letters",
   "description": "Test your users by making them select the correct letter from a text.",
   "majorVersion": 1,
-<<<<<<< HEAD
-  "minorVersion": 2,
-=======
   "minorVersion": 1,
->>>>>>> 7748df7d7a42646aec9bdedd5ec4b5bac833c4d3
-  "patchVersion": 1,
   "runnable": 1,
   "embedTypes": [
     "iframe"

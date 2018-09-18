@@ -92,15 +92,9 @@ H5P.MarkTheLetters = (function($, Question, UI) {
                 '</div><br />').appendTo($feedbackContainer);
 
             self.setFeedback(feedback, score, max, self.params.scoreBarLabel);
-<<<<<<< HEAD
-            self.$progressBar = UI.createScoreBar(max, self.params.scoreBarLabel);
-            self.$progressBar.setScore(score);
-            self.$progressBar.appendTo($feedbackContainer);
-=======
             self.$progressBar = UI.createScoreBar(max, 'scoreBarLabel');
             self.$progressBar.setScore(score);
-            self.$progressBar.appendTo($feedbackDialog);
->>>>>>> 7748df7d7a42646aec9bdedd5ec4b5bac833c4d3
+            self.$progressBar.appendTo($feedbackContainer);
 
             self.$retry = UI.createButton({
                 title: 'Retry Button',
@@ -108,10 +102,6 @@ H5P.MarkTheLetters = (function($, Question, UI) {
                 'class': 'retry h5p-question-try-again h5p-joubelui-button',
                 click: function() {
                     $container.empty();
-<<<<<<< HEAD
-                    score = 0;
-=======
->>>>>>> 7748df7d7a42646aec9bdedd5ec4b5bac833c4d3
                     clickedLetters.length = 0;
                     wrongAnswers.length = 0;
                     correctAnswers.length = 0;
@@ -129,11 +119,8 @@ H5P.MarkTheLetters = (function($, Question, UI) {
                     $("li").each(function(el) {
                         for (i = 0; i < index.length; i++) {
                             if ($(this).attr("data-id") == index[i]) {
-<<<<<<< HEAD
                                 $(this).addClass("div-alpha");
-=======
                                 $(this).attr("aria-describedby","h5p-description-missed");
->>>>>>> 7748df7d7a42646aec9bdedd5ec4b5bac833c4d3
                             }
                         }
                     });
